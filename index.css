@@ -1,1 +1,38 @@
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--gold);
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button {
+    margin: 30px;
+    cursor: pointer;
+    width: 230px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background: none;
+  }
+  
+  table {
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: gray;
+  }
+  

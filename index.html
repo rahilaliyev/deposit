@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deposit Calculator</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bar">
+        <button class="year" onclick="credits('yearly')">
+          Withdrawal at the end of period
+        </button>
+        <button class="month" onclick="credits('monthly')">
+          Monthly withdrawal
+        </button>
+      </div>
 
+      <div id="yearly" class="period">
+        <table>
+          <tr>
+            <th></th>
+            <th>AZN</th>
+            <th>USD</th>
+            <th>EUR</th>
+          </tr>
+          <tr>
+            <td>3 ay</td>
+            <td>6 %</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>6 ay</td>
+            <td>8 %</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>12 ay</td>
+            <td>12 %</td>
+            <td>2 %</td>
+            <td>0,1 %</td>
+          </tr>
+          <tr>
+            <td>18 ay</td>
+            <td>12 %</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>24 ay</td>
+            <td>12 %</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>36 ay</td>
+            <td>12 %</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="monthly" class="period" style="display: none">
+        <table>
+          <tr>
+            <th></th>
+            <th>AZN</th>
+            <th>USD</th>
+            <th>EUR</th>
+          </tr>
+          <tr>
+            <td>12 ay</td>
+            <td>11 %</td>
+            <td>1,6 %</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>18 ay</td>
+            <td>11 %</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>24 ay</td>
+            <td>11 %</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>36 ay</td>
+            <td>11 %</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>
